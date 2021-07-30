@@ -5,9 +5,10 @@ Fully build in NodeJS.
 
 ## Installation
 
-install [postgress](https://www.postgresql.org/) for database.
+install [PostgreSQL](https://www.postgresql.org/) for database.
 
-Use Docker for containering
+Use [Docker](https://www.docker.com/) for containering
+
 ```bash
 docker-compose up
 ```
