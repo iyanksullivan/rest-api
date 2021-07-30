@@ -9,6 +9,7 @@ install [PostgreSQL](https://www.postgresql.org/) for database.
 
 Use [Docker](https://www.docker.com/) for containering
 
+use command below for making an image and running the API server.
 ```bash
 docker-compose up
 ```
