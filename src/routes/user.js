@@ -52,9 +52,11 @@ router.get("/carlist",auth_user,async(req,res)=>{
 
 router.post("/topUp",auth_user,async(req,res)=>{
     try {
-        const {new_balance} = req.body
+        let {new_balance} = req.body
         const decode = decode_token(req)
         const username = decode.username
+        const data = await get_data(username)
+        new_balance = parseInt(new_balance) + parseInt(data.balance)
         await update_balance(username,new_balance)
         res.send("Balance succesfully added")
     } catch (error) {
