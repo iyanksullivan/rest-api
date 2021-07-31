@@ -1,7 +1,7 @@
 # Rest-api
 
-This is my personal API, this API included JWT authentication simple token authorization, Login system databse CRUD (PostgreSQL)
-Fully build in NodeJS.
+This is my personal API, this API included JWT authentication simple token authorization, Login system, database CRUD (PostgreSQL)
+Fully built in NodeJS.
 
 ## Installation
 
