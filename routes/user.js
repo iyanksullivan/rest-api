@@ -1,6 +1,6 @@
-const {check_email, check_uname, create_user, check_password, update_balance, get_uid, buy_loan, prisma, get_data, payment} = require('./../../module/users')
-const {all_cars} = require('./../../module/car')
-const {all_transaction_spec_user,transaction_spec_id} = require('./../../module/transaction')
+const {check_email, check_uname, create_user, check_password, update_balance, get_uid, buy_loan, prisma, get_data, payment} = require('./../../model/users')
+const {all_cars} = require('./../../model/car')
+const {all_transaction_spec_user,transaction_spec_id} = require('./../../model/transaction')
 const router = require('express').Router()
 const jwt = require('jsonwebtoken');
 const { auth_user,decode_token } = require('./auth');
