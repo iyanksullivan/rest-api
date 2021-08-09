@@ -1,9 +1,9 @@
 require('dotenv').config()
 const express = require('express')
-const userRoute = require('./src/routes/user')
-const adminRoute = require('./src/routes/admin')
+const userRoute = require('./routes/user_routes')
+const adminRoute = require('./routes/admin_routes')
 const app = express();
-const {auth_user} = require('./src/routes/auth')
+const {auth_user} = require('./middleware/auth')
 
 app.use(express.json()) 
 

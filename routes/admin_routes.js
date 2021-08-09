@@ -1,9 +1,9 @@
-const {check_uname, check_password, check_type} = require('./../../model/users')
-const {Create_car,update_cars, soft_delete} = require('./../../model/car')
-const {all_transaction}= require('./../../model/transaction')
+const {check_uname, check_password, check_type} = require('../model/users')
+const {Create_car,update_cars, soft_delete} = require('../model/car')
+const {all_transaction}= require('../model/transaction')
 const router = require('express').Router()
 const jwt = require('jsonwebtoken');
-const {auth_admin} = require('./auth');
+const {auth_admin} = require('../middleware/auth');
 
 //routes
 router.post("/Login",async(req,res)=>{
